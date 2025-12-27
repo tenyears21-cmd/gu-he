@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/react-refresh';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-base: '/gu-he/',  //
+  base: '/gu-he/',
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
